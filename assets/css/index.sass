@@ -1,67 +1,56 @@
 ---
 ---
 
-// Import your base files
-@import "index", "font", "basic", "layout", "classes";
+@import index font basic layout classes
 
-// Georgia Tech palette
-$gt-navy:   #003057;
-$gt-gold:   #F7B800; // brighter Old Gold
-$gt-gold-d: #DAA520; // darker gold for hover/borders
+// Georgia Tech color palette
+$gt-navy:   #003057
+$gt-gold:   #F7B800
+$gt-gold-d: #DAA520
 
-@media (min-width: 40em) {
+@media (min-width: 40em)
   body > header,
   body > article,
-  body > footer {
-    padding: 1.75em calc(40% - 17em);
-  }
-}
+  body > footer
+    padding: 1.75em calc(40% - 17em)
 
-// Header
-body > header {
-  background: $gt-navy;
-  color: $gt-gold;
-  border-bottom: 2px solid lighten($gt-navy, 10%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
+body > header
+  background: $gt-navy
+  color: $gt-gold
+  border-bottom: 2px solid lighten($gt-navy, 10%)
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15)
 
-// Footer
-body > footer {
-  background: $gt-navy;
-  color: $gt-gold;
-  border-top: 2px solid lighten($gt-navy, 10%);
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15) inset;
-  opacity: 0.95;
-}
+body > footer
+  background: $gt-navy
+  color: $gt-gold
+  border-top: 2px solid lighten($gt-navy, 10%)
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15) inset
+  opacity: 0.95
 
-// Links & Buttons
 a,
-a:visited {
-  color: $gt-gold;
-  text-decoration: none;
-  transition: color 0.2s;
-}
+a:visited
+  color: $gt-gold
+  text-decoration: none
+  transition: color 0.2s ease
+
 a:hover,
-a:focus {
-  color: $gt-gold-d;
-}
+a:focus
+  color: $gt-gold-d
 
-// Any button classes
 .button,
-.btn {
-  background-color: $gt-navy;
-  color: $gt-gold;
-  border: 1px solid $gt-gold-d;
-  &:hover {
-    background-color: darken($gt-navy, 5%);
-    border-color: $gt-gold;
-  }
-}
+.btn
+  background-color: $gt-navy
+  color: $gt-gold
+  border: 1px solid $gt-gold-d
+  padding: 0.5em 1em
+  border-radius: 4px
+  transition: background-color 0.2s ease, border-color 0.2s ease
 
-// Sidebar or nav items (if used)
-nav a {
-  color: $gt-gold;
-  &:hover {
-    background: rgba($gt-gold, 0.1);
-  }
-}
+  &:hover
+    background-color: darken($gt-navy, 5%)
+    border-color: $gt-gold
+
+nav a
+  color: $gt-gold
+  &:hover
+    background: rgba($gt-gold, 0.1)
