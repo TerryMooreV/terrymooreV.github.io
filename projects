@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Projects"
+permalink: /projects/
+---
+
+<h1>Projects</h1>
+
+<section id="spotify-wrapped">
+  <h2>Spotify Wrapped</h2>
+  <p>Developed a Django-based web application that connects to the Spotify API to display users’ top tracks, artists, and albums in an interactive dashboard. Features include account registration, OAuth integration, and data visualization.</p>
+</section>
+
+<section id="atlanta-food-finder">
+  <h2>Atlanta Food Finder</h2>
+  <p>Created a location-aware site using Django and the Google Maps API that helps users discover nearby restaurants. Implemented filtering by cuisine type, dynamic map markers, and a ‘Restaurants Near Me’ button to load results within a 2 km radius.</p>
+</section>
+
+<section id="personal-website">
+  <h2>Personal Website (Jekyll)</h2>
+  <p>Built a responsive portfolio website using Jekyll and Sass, featuring a custom navigation, dark/light mode support, and embedded content (CV, projects, coursework). Hosted on GitHub Pages with continuous deployment.</p>
+</section>
