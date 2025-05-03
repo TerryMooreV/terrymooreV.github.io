@@ -1,28 +1,73 @@
 ---
 ---
 
+// Georgia Tech color palette
+$gt-navy:   #003057
+$gt-gold:   #F7B800
+$gt-gold-d: #DAA520
+
+// Override core theme variables
+$link-color: $gt-gold
+$dark: $gt-navy
+$light: #ffffff
+
+// Import base styles
 @import index, font, basic, layout, classes
 
+// Responsive padding
 @media (min-width: 40em)
   body > header, body > article, body > footer
     padding: 1.75em calc(40% - 17em)
 
+// Header styling based on minimal flag
 {% if site.minimal %}
-
 body > header
   background: $dark
   color: $light
-  border-bottom: 1px solid reduce(14)
-
+  border-bottom: 1px solid rgba(mix($dark, $light), 0.14)
 {% else %}
-
 body > header
+  background: $light
+  color: $dark
   box-shadow: 0 0 .6em rgba($dark, 0.04)
-  border-bottom: 1px solid reduce(14)
-
+  border-bottom: 1px solid rgba(mix($dark, $light), 0.14)
 {% endif %}
 
+// Footer styling
 body > footer
+  background: $light
+  color: $dark
   box-shadow: 0 0 .6em rgba($dark, 0.04) inset
-  border-top: 1px solid reduce(14)
+  border-top: 1px solid rgba(mix($dark, $light), 0.14)
   opacity: .9
+
+// Links
+a,
+a:visited
+  color: $link-color
+  text-decoration: none
+  transition: color 0.2s ease
+
+a:hover,
+a:focus
+  color: $gt-gold-d
+
+// Buttons
+.button,
+.btn
+  background-color: $dark
+  color: $light
+  border: 1px solid $gt-gold-d
+  padding: 0.5em 1em
+  border-radius: 4px
+  transition: background-color 0.2s ease, border-color 0.2s ease
+
+  &:hover
+    background-color: darken($dark, 5%)
+    border-color: $light
+
+// Navigation links
+nav a
+  color: $link-color
+  &:hover
+    background: rgba($gt-gold, 0.1)
