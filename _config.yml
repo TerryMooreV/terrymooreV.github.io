@@ -7,8 +7,6 @@ excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
 # Theme and Colors
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default"
 header_background: "#003057"      # GT Navy
 header_text_color: "#F7E9A7"      # Old Gold
 accent_color: "#F7E9A7"
