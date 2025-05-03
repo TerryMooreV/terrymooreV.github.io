@@ -4,60 +4,44 @@ title: "Home"
 permalink: /
 ---
 
-<section class="hero" style="background-color:#f0f0f0; color:#333; padding:2rem; border-radius:8px; margin:1.5rem;">
-  <div style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap;">
-    <img src="/assets/images/headshot.JPG" alt="Terry Moore Headshot" style="max-width:200px; height:auto; border-radius:50%; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
-    <div style="flex:1; min-width:250px;">
-      <h1 style="margin-top:0; color:#222;">Hello, I'm Terry Moore</h1>
-      <p style="line-height:1.6;">
+<div class="content-wrapper" style="padding:1.5rem;">
+
+  <div class="home-intro" style="display:flex; align-items:center; gap:1.5rem; margin-bottom:2rem;">
+    <img src="/assets/images/headshot.JPG" alt="Terry Moore Headshot" style="max-width:200px; height:auto; border-radius:50%; border: 3px solid #F7B800;" />
+    <div>
+      <h1 style="margin:0 0 0.5rem;">Hello, I'm Terry Moore</h1>
+      <p style="margin:0 0 0.5rem; line-height:1.6;">
         I’m Terry Moore, a business major at Georgia Tech with a concentration in Strategy and Innovation, and minors in FinTech and Computer Science. My passion lies in combining business acumen with technology to drive innovation and solve complex problems.
       </p>
-      <p style="line-height:1.6;">
+      <p style="margin:0; line-height:1.6;">
         With hands-on experience in project management, data analysis, and system testing, I’ve led teams to build web applications, developed feature-rich Spotify extensions, and created tactical and strategic dashboards for optimizing performance.
       </p>
     </div>
   </div>
-</section>
 
-<section class="career-info" style="margin:1.5rem;">
-  <h2 style="color:#fff;">Career Interests</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; padding:1rem 0;">
-    <div style="background:#007acc; color:#fff; padding:1rem; border-radius:6px; text-align:center; transition:transform 0.3s;">
-      <i class="fas fa-robot" style="font-size:2rem;"></i>
-      <h3 style="margin:0.5rem 0 0;">Technology Strategy</h3>
-    </div>
-    <div style="background:#28a745; color:#fff; padding:1rem; border-radius:6px; text-align:center; transition:transform 0.3s;">
-      <i class="fas fa-code" style="font-size:2rem;"></i>
-      <h3 style="margin:0.5rem 0 0;">Software Development</h3>
-    </div>
-    <div style="background:#ffc107; color:#333; padding:1rem; border-radius:6px; text-align:center; transition:transform 0.3s;">
-      <i class="fas fa-chart-line" style="font-size:2rem;"></i>
-      <h3 style="margin:0.5rem 0 0;">Financial Technology</h3>
-    </div>
-    <div style="background:#6f42c1; color:#fff; padding:1rem; border-radius:6px; text-align:center; transition:transform 0.3s;">
-      <i class="fas fa-chart-pie" style="font-size:2rem;"></i>
-      <h3 style="margin:0.5rem 0 0;">Business Analytics</h3>
-    </div>
+  <div class="career-info" style="margin:1.5rem 0;">
+    <h2 style="margin-bottom:0.5rem;">Career Interests</h2>
+    <ul style="list-style:disc inside; margin:0; padding-left:1rem; line-height:1.6;">
+      <li>Technology Strategy</li>
+      <li>Software Development</li>
+      <li>Financial Technology</li>
+      <li>Business Analytics</li>
+    </ul>
   </div>
-  <style>
-    .career-info div:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-  </style>
-</section>
 
-<section class="cv-link" style="margin:1.5rem;">
-  <h2 style="color:#fff;">Curriculum Vitae</h2>
-  <a href="/assets/docs/CV.pdf" style="display:inline-block; padding:0.75rem 1.5rem; background-color:#007acc; color:#fff; border-radius:4px; text-decoration:none;">Download CV</a>
-  <span style="margin-left:1rem; color:#ccc;">or <a href="/cv/" style="color:#fff;">view CV page</a>.</span>
-</section> style="margin:1.5rem;">
-  <h2 style="color:#fff;">Curriculum Vitae</h2>
-  <a href="/assets/docs/CV.pdf" style="display:inline-block; padding:0.75rem 1.5rem; background-color:#007acc; color:#fff; border-radius:4px; text-decoration:none;">Download CV</a>
-  <span style="margin-left:1rem; color:#ccc;">or <a href="/cv/" style="color:#fff;">view CV page</a>.</span>
-</section>
-
-<section class="contact-info" style="margin:1.5rem; background:#fff; padding:1.5rem; border-radius:8px;">
-  <h2 style="color:#333; margin-top:0;">Contact Me</h2>
-  <div style="display:flex; align-items:center; gap:1.5rem;">
-    <a href="mailto:terry.l.moore@gatech.edu" style="font-size:1.5rem; color:#007acc; text-decoration:none; display:flex; align-items:center;"><i class="fas fa-envelope" style="margin-right:0.5rem;"></i><span style="color:#333;">Email Me</span></a>
-    <a href="https://www.linkedin.com/in/terry-moore-v" target="_blank" style="font-size:1.5rem; color:#0077b5; text-decoration:none; display:flex; align-items:center;"><i class="fab fa-linkedin" style="margin-right:0.5rem;"></i><span style="color:#333;">LinkedIn</span></a>
+  <div class="cv-link" style="margin:1.5rem 0;">
+    <h2 style="margin-bottom:0.5rem;">Curriculum Vitae</h2>
+    <p style="margin:0;">
+      Download my CV <a href="/assets/docs/CV.pdf" target="_blank">here</a> or view it on the <a href="/cv/">CV page</a>.
+    </p>
   </div>
-</section>
+
+  <div class="contact-info" style="margin:1.5rem 0; background: rgba(255,255,255,0.1); padding:1rem; border-radius:6px;">
+    <h2 style="margin:0 0 0.5rem;">Contact Me</h2>
+    <p style="margin:0; line-height:1.6;">
+      <a href="mailto:terry.l.moore@gatech.edu" style="color:#F7B800; text-decoration:none; margin-right:1rem;">Email Me</a>
+      <a href="https://www.linkedin.com/in/terry-moore-v" target="_blank" style="color:#F7B800; text-decoration:none;">LinkedIn</a>
+    </p>
+  </div>
+
+</div>
