@@ -4,40 +4,41 @@ title: "Home"
 permalink: /
 ---
 
-<div class="content-wrapper" style="padding:1.5rem;">
-  <div class="home-intro" style="display:flex; align-items:center; gap:1.5rem; margin-bottom:2rem;">
-    <img src="/assets/images/headshot.JPG" alt="Terry Moore Headshot" class="headshot" style="max-width:200px; height:auto; border-radius:50%;" />
-    <div>
-      <h1>Hello, I'm Terry Moore</h1>
-      <p>
+<section class="hero" style="background-color:#f0f0f0; padding:2rem; border-radius:8px; margin:1.5rem;">
+  <div style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap;">
+    <img src="/assets/images/headshot.JPG" alt="Terry Moore Headshot" style="max-width:200px; height:auto; border-radius:50%; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
+    <div style="flex:1; min-width:250px;">
+      <h1 style="margin-top:0;">Hello, I'm Terry Moore</h1>
+      <p style="line-height:1.6;">
         I’m Terry Moore, a business major at Georgia Tech with a concentration in Strategy and Innovation, and minors in FinTech and Computer Science. My passion lies in combining business acumen with technology to drive innovation and solve complex problems.
-        With hands-on experience in project management, data analysis, and system testing, I’ve led teams to build web applications, developed feature-rich Spotify extensions, and created tactical and strategic dashboards for optimizing performance. I thrive in roles where I can use data to inform decisions, deliver actionable insights, and improve system functionality.
+      </p>
+      <p style="line-height:1.6;">
+        With hands-on experience in project management, data analysis, and system testing, I’ve led teams to build web applications, developed feature-rich Spotify extensions, and created tactical and strategic dashboards for optimizing performance.
       </p>
     </div>
   </div>
+</section>
 
-  <div class="career-info" style="padding:1rem 0;">
-    <h2>Career Interests</h2>
-    <ul>
-      <li>Technology Strategy</li>
-      <li>Software Development</li>
-      <li>Financial Technology</li>
-      <li>Business Analytics</li>
-    </ul>
-  </div>
+<section class="career-info" style="margin:1.5rem;">
+  <h2>Career Interests</h2>
+  <ul style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; list-style:none; padding:0; margin:1rem 0;">
+    <li style="background:#e5e5e5; padding:0.75rem 1rem; border-radius:4px; text-align:center;">Technology Strategy</li>
+    <li style="background:#e5e5e5; padding:0.75rem 1rem; border-radius:4px; text-align:center;">Software Development</li>
+    <li style="background:#e5e5e5; padding:0.75rem 1rem; border-radius:4px; text-align:center;">Financial Technology</li>
+    <li style="background:#e5e5e5; padding:0.75rem 1rem; border-radius:4px; text-align:center;">Business Analytics</li>
+  </ul>
+</section>
 
-  <div class="cv-link" style="padding:1rem 0;">
-    <h2>Curriculum Vitae</h2>
-    <p>
-      Download my CV <a href="/assets/docs/CV.pdf" target="_blank">here</a> or view it on the <a href="/cv/">CV page</a>.
-    </p>
-  </div>
+<section class="cv-link" style="margin:1.5rem;">
+  <h2>Curriculum Vitae</h2>
+  <a href="/assets/docs/CV.pdf" style="display:inline-block; padding:0.75rem 1.5rem; background-color:#007acc; color:#fff; border-radius:4px; text-decoration:none;">Download CV</a>
+  <span style="margin-left:1rem;">or <a href="/cv/">view CV page</a>.</span>
+</section>
 
-  <div class="contact-info" style="padding:1rem 0;">
-    <h2>Contact Me</h2>
-    <ul class="social-links">
-      <li><a href="mailto:terry.l.moore@gatech.edu">terry.l.moore@gatech.edu</a></li>
-      <li><a href="https://www.linkedin.com/in/terry-moore-v" target="_blank">LinkedIn</a></li>
-    </ul>
+<section class="contact-info" style="margin:1.5rem;">
+  <h2>Contact Me</h2>
+  <div style="display:flex; align-items:center; gap:1rem; margin-top:0.5rem;">
+    <a href="mailto:terry.l.moore@gatech.edu" style="font-size:1.5rem; color:#333; text-decoration:none;"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/terry-moore-v" target="_blank" style="font-size:1.5rem; color:#0077b5; text-decoration:none;"><i class="fab fa-linkedin"></i></a>
   </div>
-</div>
+</section>
