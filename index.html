@@ -1,10 +1,39 @@
 ---
 layout: default
 title: "Home"
+permalink: /
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+<div class="home-intro">
+  <img src="/assets/images/headshot.jpg" alt="Terry Moore Headshot" class="headshot" />
+  <h1>Hello, I'm Terry Moore</h1>
+  <p>
+    I'm a Business major with a CS minor at Georgia Tech, passionate about tech innovation, entrepreneurship, and finance. I'm aspiring to begin a career in technology strategy and software development.
+  </p>
+</div>
+
+<div class="career-info">
+  <h2>Career Interests</h2>
+  <ul>
+    <li>Technology Strategy</li>
+    <li>Software Development</li>
+    <li>Data Structures &amp; Algorithms</li>
+    <li>Business Analytics</li>
+  </ul>
+</div>
+
+<div class="cv-link">
+  <h2>Curriculum Vitae</h2>
+  <p>
+    Download my CV <a href="/assets/cv.pdf" target="_blank">here</a> or view it on the <a href="/cv/">CV page</a>.
+  </p>
+</div>
+
+<div class="contact-info">
+  <h2>Contact Me</h2>
+  <ul class="social-links">
+    <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+    <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+  </ul>
+</div>
