@@ -13,46 +13,32 @@ header_background: "#003057"      # GT Navy
 header_text_color: "#F7E9A7"      # Old Gold
 accent_color: "#F7E9A7"
 link_color: "#F7E9A7"
-link_hover_color: "#DAA520"      # Darker Gold
+link_hover_color: "#DAA520"  
 
 # Layout
-show_excerpts: false       # show article excerpts on the home page
-enable_copy_code_button: false
+
+show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
-# Navigation
-navigation:
-  - file: "index.html"
-    title: "Home"
-    icon: home
-  - file: "TerryMooreResume"
-    title: "CV"
-    icon: file-alt
-  - file: "projects.html"
-    title: "Projects"
-    icon: folder-open
-  - file: "coursework.html"
-    title: "Coursework"
-    icon: book
+# Menu
 
-# External Links (Footer)
-external:
-  - title: Mail
-    icon: envelope
-    url: "mailto:terry.l.moore@gatech.edu"
-  - title: GitHub
-    icon: github
-    url: "https://github.com/TerryMooreV"
-  - title: Subscribe
-    icon: rss
-    url: "/feed.xml"
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html", title: "Home"}
+  - {file: "TerryMooreResume", title: "CV"}
+  - {file: "projects.html", title: "Projects"}
+  - {file: "coursework.html", title: "Coursework"}
+  
 
-# Comments
-# disqus_shortname: ""
-# isso_domain: ""
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:terry.l.moore@gatech.edu"}
+  - {title: Github, icon: github, url: "https://github.com/TerryMooreV"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-# Plugins
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
+
 plugins:
-  - jekyll-feed
+ - jekyll-feed
