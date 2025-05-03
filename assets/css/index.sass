@@ -1,56 +1,28 @@
 ---
 ---
 
-@import index font basic layout classes
-
-// Georgia Tech color palette
-$gt-navy:   #003057
-$gt-gold:   #F7B800
-$gt-gold-d: #DAA520
+@import index, font, basic, layout, classes
 
 @media (min-width: 40em)
-  body > header,
-  body > article,
-  body > footer
+  body > header, body > article, body > footer
     padding: 1.75em calc(40% - 17em)
 
+{% if site.minimal %}
+
 body > header
-  background: $gt-navy
-  color: $gt-gold
-  border-bottom: 2px solid lighten($gt-navy, 10%)
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15)
+  background: $dark
+  color: $light
+  border-bottom: 1px solid reduce(14)
+
+{% else %}
+
+body > header
+  box-shadow: 0 0 .6em rgba($dark, 0.04)
+  border-bottom: 1px solid reduce(14)
+
+{% endif %}
 
 body > footer
-  background: $gt-navy
-  color: $gt-gold
-  border-top: 2px solid lighten($gt-navy, 10%)
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15) inset
-  opacity: 0.95
-
-a,
-a:visited
-  color: $gt-gold
-  text-decoration: none
-  transition: color 0.2s ease
-
-a:hover,
-a:focus
-  color: $gt-gold-d
-
-.button,
-.btn
-  background-color: $gt-navy
-  color: $gt-gold
-  border: 1px solid $gt-gold-d
-  padding: 0.5em 1em
-  border-radius: 4px
-  transition: background-color 0.2s ease, border-color 0.2s ease
-
-  &:hover
-    background-color: darken($gt-navy, 5%)
-    border-color: $gt-gold
-
-nav a
-  color: $gt-gold
-  &:hover
-    background: rgba($gt-gold, 0.1)
+  box-shadow: 0 0 .6em rgba($dark, 0.04) inset
+  border-top: 1px solid reduce(14)
+  opacity: .9
